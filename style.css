@@ -141,3 +141,13 @@ img{
 .inst{
   margin-right: 3rem;
 }
+/* адаптивность */
+@media (max-width: 500px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
