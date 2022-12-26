@@ -151,3 +151,21 @@ img{
     margin-left: 10%;
   }
 }
+@media (max-width: 560px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 760px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
