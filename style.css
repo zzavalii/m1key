@@ -90,7 +90,7 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #201429;
+  background-color: #9d9e44;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -101,7 +101,7 @@ canvas{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50rem;
+  margin-top: -52rem;
   width: 100vw;
   height: 80vh;
   flex-direction: column;
@@ -131,7 +131,9 @@ img{
   width: 10rem;
   height: 10rem;
 }
-
+img:hover{
+  transform: scale(1.1);
+}
 .steam{
   margin-right: 3rem;
 }
@@ -141,7 +143,17 @@ img{
 .inst{
   margin-right: 3rem;
 }
-/* адаптивность */
+.ins{
+  width: 9.5rem;
+  height: 9.5rem;
+}
+.telegram{
+  width: 9.5rem;
+  height: 9.5rem;
+}
+.spot{
+  margin-right: 3rem;
+}
 @media (max-width: 500px) {
   .row{
     display: flex;
@@ -150,6 +162,35 @@ img{
     align-items: center;
     margin-left: 10%;
   }
+  img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .telegram{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steam{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -49rem;
+  
+}
 }
 @media (max-width: 560px) {
   .row{
@@ -159,6 +200,35 @@ img{
     align-items: center;
     margin-left: 10%;
   }
+  img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .telegram{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steam{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -49rem;
+  
+}
 }
 @media (max-width: 760px) {
   .row{
@@ -168,4 +238,33 @@ img{
     align-items: center;
     margin-left: 10%;
   }
+  img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .telegram{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steam{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -49rem;
+  
+}
 }
