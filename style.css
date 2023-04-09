@@ -1,301 +1,279 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
+* {
+	padding: 0;
+	margin: 0;
+}
+.banner{
+	margin-top: 14rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5rem;
+	color: rgb(224, 217, 204);
+	font-family: 'Permanent Marker', cursive;
+}
 
-   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-   body{line-height:1}
-   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-   nav ul{list-style:none}
-   blockquote,q{quotes:none}
-   blockquote:before,blockquote:after,q:before,q:after{content:none}
-   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-   del{text-decoration:line-through}
-   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-   table{border-collapse:collapse;border-spacing:0}
-   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-   input,select{vertical-align:middle}
-   li{list-style:none}
-   
-   @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-   
- /* =============================================================================
-      PRELOADER
-      ========================================================================== */
+body {
+	transition: background 0.5s ease, color 0.5s ease;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--color-primary);
+	user-select: none;
+}
 
+.theme-light {
+	--color-primary: #a9af51;
+	--color-secondary: #47b36f;
+	--color-accent: #d4df3e;
+	--font-color: #000000;
+}
 
-   .preloader {
-    /*фиксированное позиционирование*/
-    position: fixed;
-    /* координаты положения */
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* фоновый цвет элемента */
-    background: #479752fb;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-    z-index: 1001;
+.theme-dark {
+	--color-primary: #3c3232;
+	--color-secondary: #000000;
+	--color-accent: #75778d;
+	--font-color: #ffffff;
+}
+
+.themechange {
+	transition: background 0.5s ease, color 1s ease;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 10px;
+}
+
+@keyframes ani {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	border-radius: 10px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-accent);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	bottom: 0;
+	background-color: var(--color-secondary);
+	margin: auto 0;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	box-shadow: 0 0px 15px #2020203d;
+	background: rgb(203, 226, 89) url('https://i.ibb.co/7JfqXxB/sunny.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+input:checked + .slider {
+	background-color: var(--color-accent);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+	background: rgb(107, 27, 27) url('https://i.ibb.co/FxzBYR9/night.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--color-secondary);
+}
+
+.slider.round {
+	border-radius: 34px;
+} 
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.mikey{
+	margin-left: -4rem;
+	font-size: 5rem;
+}
+.steampic{
+	width: 10rem;
+	height: 10rem;
+}
+
+.telegrampic{
+	width: 10.5rem;
+	height: 10.5rem;
+}
+
+.instpic{
+	width: 10rem;
+	height: 10rem;
+}
+
+ .spotifypic{
+	width: 10rem;
+	height: 10rem;
+}
+.steamm{
+	display: flex;
+	font-size: 2rem;
+}
+.row{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+img:hover{
+	transform: scale(1.1);
   }
-  
-  .preloader__row {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
+  .steam{
+	margin-right: 3rem;
   }
-  
-  .preloader__item {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    background-color: #367f81;
-    border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    animation: preloader-bounce 2s infinite ease-in-out;
+  .telegram{
+	margin-right: 3rem;
   }
-  
-  .preloader__item:last-child {
-    top: auto;
-    bottom: 0;
-    animation-delay: -1s;
+  .inst{
+	margin-right: 3rem;
   }
-  
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
+  .ins{
+	width: 9.5rem;
+	height: 9.5rem;
   }
-  
-  @keyframes preloader-bounce {
-  
-    0%,
-    100% {
-      transform: scale(0);
-    }
-  
-    50% {
-      transform: scale(1);
-    }
+  .telegram{
+	width: 9.5rem;
+	height: 9.5rem;
   }
-  
-  .loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
+  .spot{
+	margin-right: 3rem;
   }
-  
-  .loaded .preloader {
-    display: none;
+  @media (max-width: 500px) {
+
+	.banner{
+		margin-top: -1rem;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.steampic{
+		width: 5rem;
+		height: 5rem;
+	}
+	
+	.telegrampic{
+		width: 5.5rem;
+		height: 5.5rem;
+	}
+	
+	.instpic{
+		width: 5rem;
+		height: 5rem;
+	}
+	
+	 .spotifypic{
+		width: 5rem;
+		height: 5rem;
+	}
+	.steamm{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.steam{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .inst{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		width: 9.5rem;
+		height: 9.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .spot{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
   }
-   
-   /* =============================================================================
-      My CSS
-      ========================================================================== */
-   
-   /* ---- base ---- */
-   
-   html,body{ 
-       width:100%;
-       height:100%;
-       background: url(pic/aurora-borealis-reflection-picjumbo-com.jpg);
-   }
-   
-   body{
-     font:normal 75% Arial, Helvetica, sans-serif;
-     font-family: 'Permanent Marker', cursive;
-     background-size: cover;
-   }   
-   
-   #particles-js{
-     width: 100%;
-     height: 100%;
-     background-size: cover;
-     background-position: 50% 50%;
-     background-repeat: no-repeat;
-   }
-   
-   .banner{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin-top: -52rem;
-     width: 100vw;
-     height: 80vh;
-     flex-direction: column;
-   }
-   h1{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 5rem;
-     color: rgb(91, 216, 118);
-   }
-   .mikey{
-     margin-left: -4rem;
-     font-size: 5rem;
-   }
-   .steamm{
-     display: flex;
-     font-size: 2rem;
-   }
-   .row{
-     margin-top: 2rem;
-     display: flex;
-     justify-content: center;
-     flex-direction: row;
-   }
-   img{
-     width: 10rem;
-     height: 10rem;
-   }
-   img:hover{
-     transform: scale(1.1);
-   }
-   .steam{
-     margin-right: 3rem;
-   }
-   .telegram{
-     margin-right: 3rem;
-   }
-   .inst{
-     margin-right: 3rem;
-   }
-   .ins{
-     width: 9.5rem;
-     height: 9.5rem;
-   }
-   .telegram{
-     width: 9.5rem;
-     height: 9.5rem;
-   }
-   .spot{
-     margin-right: 3rem;
-   }
-   @media (max-width: 500px) {
-    .mikey{
-      margin-top: 3rem;
-      font-size: 4rem;
-    }
-     .row{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-left: 10%;
-     }
-     img{
-       width: 6rem;
-       height: 6rem;
-     }
-     .telegram{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .spot{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .steam{
-      margin-top: -1rem;
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .banner{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-top: -49rem;
-     
-   }
-   }
-   @media (max-width: 560px) {
-     .row{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-left: 10%;
-     }
-     img{
-       width: 7rem;
-       height: 7rem;
-     }
-     .telegram{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .spot{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .steam{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .banner{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-top: -49rem;
-     
-   }
-   }
-   @media (max-width: 760px) {
-     .row{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-left: 10%;
-     }
-     img{
-       width: 7rem;
-       height: 7rem;
-     }
-     .telegram{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .spot{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .steam{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-     }
-     .banner{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-top: -49rem;
-     
-   }
-   }
+  @media (max-width: 560px) {
+	
+  }
+  @media (max-width: 760px) {
+	
+  }
 
 
-   
