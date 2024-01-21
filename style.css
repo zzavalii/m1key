@@ -17,29 +17,38 @@ h1{
 	color: rgb(224, 217, 204);
 	font-family: 'Permanent Marker', cursive;
 }
-
+html {
+    height: 100vh;
+}
 body {
-	transition: background 0.5s ease, color 0.5s ease;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	background-color: var(--color-primary);
-	user-select: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: var(--background-gradient); /* Використовуємо змінну для градієнту */
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+    transition: background 0.5s ease, color 0.5s ease;
+    background-color: var(--color-primary);
+    color: var(--font-color); /* Змінюємо колір тексту відповідно до теми */
 }
 
 .theme-light {
-	--color-primary: #a9af51;
-	--color-secondary: #47b36f;
-	--color-accent: #d4df3e;
-	--font-color: #000000;
+    --color-primary: #6bcfeb;
+    --color-secondary: #6bcfeb;
+    --color-accent: #a4e3be;
+    --font-color: #000000;
+    --background-gradient: linear-gradient(45deg, #6bcfeb 0%, #42a677 100%);
 }
 
 .theme-dark {
-	--color-primary: #3c3232;
-	--color-secondary: #000000;
-	--color-accent: #75778d;
-	--font-color: #ffffff;
+    --color-primary: #3c3232;
+    --color-secondary: #000000;
+    --color-accent: #75778d;
+    --font-color: #ffffff;
+    --background-gradient: linear-gradient(45deg, #232323 0%, #000000 100%);
 }
 
 .themechange {
@@ -106,7 +115,7 @@ body {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	box-shadow: 0 0px 15px #2020203d;
-	background: rgb(203, 226, 89) url('https://i.ibb.co/7JfqXxB/sunny.png');
+	background: rgb(107, 206, 168) url('https://i.ibb.co/7JfqXxB/sunny.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -152,8 +161,9 @@ input:checked + .slider:before {
 }
 
 .instpic{
-	width: 10rem;
-	height: 10rem;
+	margin-top: 0.3rem;
+	width: 9.5rem;
+	height: 9.5rem;
 }
 
  .spotifypic{
@@ -261,6 +271,162 @@ img:hover{
 		flex-direction: column;
 	  }
 	  .spot{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+  }
+   @media (max-width: 500px) {
+
+	.banner{
+		margin-top: -1rem;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.steampic{
+		width: 5rem;
+		height: 5rem;
+	}
+	
+	.telegrampic{
+		width: 5.5rem;
+		height: 5.5rem;
+	}
+	
+	.instpic{
+		width: 5rem;
+		height: 5rem;
+	}
+	
+	 .spotifypic{
+		width: 5rem;
+		height: 5rem;
+	}
+	.steamm{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.steam{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .inst{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		width: 9.5rem;
+		height: 9.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .spot{
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+  }
+
+
+
+  @media (max-width: 890px) {
+
+	.banner{
+		margin-top: -3rem;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.steampic{
+		width: 8rem;
+		height: 8rem;
+	}
+	
+	.telegrampic{
+		width: 8.5rem;
+		height: 8.5rem;
+	}
+	
+	.instpic{
+		width: 8rem;
+		height: 8rem;
+	}
+	
+	 .spotifypic{
+		width: 8rem;
+		height: 8rem;
+	}
+	.steamm{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.steam{
+		margin-top: -rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 3rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .inst{
+		margin-top: 1.2rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 1.2rem;
+		width: 9.5rem;
+		height: 9.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .spot{
+		margin-top: 1.2rem;
 		margin-left: 3rem;
 		display: flex;
 		justify-content: center;
