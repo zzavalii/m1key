@@ -167,8 +167,9 @@ input:checked + .slider:before {
 }
 
  .spotifypic{
-	width: 10rem;
-	height: 10rem;
+	margin-top: 0.3rem;
+	width: 9.5rem;
+	height: 9.5rem;
 }
 .steamm{
 	display: flex;
