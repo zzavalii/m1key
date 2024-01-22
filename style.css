@@ -26,13 +26,13 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: var(--background-gradient); /* Використовуємо змінну для градієнту */
+    background-image: var(--background-gradient); 
     background-size: cover;
     background-position: center;
     user-select: none;
     transition: background 0.5s ease, color 0.5s ease;
     background-color: var(--color-primary);
-    color: var(--font-color); /* Змінюємо колір тексту відповідно до теми */
+    color: var(--font-color); 
 }
 
 .theme-light {
@@ -171,7 +171,7 @@ input:checked + .slider:before {
 	width: 9.5rem;
 	height: 9.5rem;
 }
-.steamm{
+.text_header{
 	display: flex;
 	font-size: 2rem;
 }
@@ -236,7 +236,7 @@ img:hover{
 		width: 5rem;
 		height: 5rem;
 	}
-	.steamm{
+	.text_header{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -310,7 +310,7 @@ img:hover{
 		width: 5rem;
 		height: 5rem;
 	}
-	.steamm{
+	.text_header{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -387,7 +387,7 @@ img:hover{
 		width: 8rem;
 		height: 8rem;
 	}
-	.steamm{
+	.text_header{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -435,11 +435,151 @@ img:hover{
 		flex-direction: column;
 	  }
   }
-  @media (max-width: 560px) {
-	
-  }
-  @media (max-width: 760px) {
-	
+  @media (max-width: 480px) {
+	.mikey{
+		font-size: 40px;
+		margin-left: -1.5rem;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.steampic{
+		width: 7rem;
+		height: 7rem;
+	}
+	.telegrampic{
+		width: 7.5rem;
+		height: 7.5rem;
+	}
+	.instpic{
+		width: 7rem;
+		height: 7rem;
+	}
+	.spotifypic{
+		width: 7rem;
+		height: 7rem;
+	}
+	.text_header{
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.steam{
+		margin-top: 0.5rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 3rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .inst{
+		margin-top: 1.2rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 1.2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .spot{
+		margin-top: 1.2rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+ 	   }
+}
+  @media (max-width: 410px) {
+	.mikey{
+		font-size: 35px;
+		margin-left: -1.5rem;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.steampic{
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+	.telegrampic{
+		width: 7rem;
+		height: 7rem;
+	}
+	.instpic{
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+	.spotifypic{
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+	.text_header{
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.steam{
+		margin-top: -0.8rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 3rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .inst{
+		margin-top: 1.2rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .telegram{
+		margin-top: 1.2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	  }
+	  .spot{
+		margin-top: 1.2rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+ 	   }
   }
 
 
